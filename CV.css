@@ -8,8 +8,15 @@ body {
 
 img {
 
-border-radius: 50%;
+border-radius: 10%;
 margin: 20px;
+animation-name: sec;
+animation-duration: 10s;
+}
+
+@keyframes sec {
+    from {border-radius: 10%;}
+    to {border-radius: 50%;}
 }
 
 h1 {
@@ -21,22 +28,49 @@ h2 {
     color: black;
 }
 
+@media only screen and (max-width: 1000px){
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'per'
+         'sum' 
+         'exp' 
+         'edu'
+         'vol' 
+         'lan'
+        ;
+        background-color:rgb(124, 67, 67);
+        padding: 18px;
+        border: 2px solid rgb(124, 67, 67);
+        margin: 1px;
+    }
+
+}
+
 .grid-container {
     display: grid;
     grid-template-areas: 'per sum exp edu vol lan'
     'per sum exp edu vol lan';
-    background-color: azure;
+    background-color:azure;
     padding: 18px;
     border: 2px solid azure;
     margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
+}
+
+@keyframes first {
+from {background-color: azure;}
+to {background-color: darkgrey;}
 }
 
 .Personal-Information {
     grid-area: per;
     background-color: azure;
     padding: 18px;
-    border: 2px solid azureue;
+    border: 2px solid azure;
     margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
 }
 
 .Summary {
@@ -45,6 +79,8 @@ h2 {
     padding: 18px;
     border: 2px solid azure;
     margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
 }
 
 .Experience {
@@ -53,6 +89,8 @@ h2 {
     padding: 18px;
     border: 2px solid azure;
     margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
 }
 
 .education {
@@ -61,6 +99,8 @@ h2 {
     padding: 18px;
     border: 2px solid azure;
     margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
 }
 
 .Volunteering {
@@ -69,6 +109,8 @@ h2 {
     padding: 18px;
     border: 2px solid azure;
     margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
 }
 
 .Languages {
@@ -77,4 +119,6 @@ h2 {
     padding: 18px;
     border: 2px solid azure;
     margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
 }
