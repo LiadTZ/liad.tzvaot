@@ -1,0 +1,124 @@
+
+body {
+    background-color: azure;
+    padding: 18px;
+    border: 2px solid azure;
+    margin: 1px;
+}
+
+img {
+
+border-radius: 10%;
+margin: 20px;
+animation-name: sec;
+animation-duration: 10s;
+}
+
+@keyframes sec {
+    from {border-radius: 10%;}
+    to {border-radius: 50%;}
+}
+
+h1 {
+    color:black;
+    tab-size: 10vw;
+}
+
+h2 {
+    color: black;
+}
+
+@media only screen and (max-width: 1000px){
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'per'
+         'sum' 
+         'exp' 
+         'edu'
+         'vol' 
+         'lan'
+        ;
+        background-color:rgb(124, 67, 67);
+        padding: 18px;
+        border: 2px solid rgb(124, 67, 67);
+        margin: 1px;
+    }
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'per sum exp edu vol lan'
+    'per sum exp edu vol lan';
+    background-color:azure;
+    padding: 18px;
+    border: 2px solid azure;
+    margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
+}
+
+@keyframes first {
+from {background-color: azure;}
+to {background-color: darkgrey;}
+}
+
+.Personal-Information {
+    grid-area: per;
+    background-color: azure;
+    padding: 18px;
+    border: 2px solid azure;
+    margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
+}
+
+.Summary {
+    grid-area: sum;
+    background-color: azure;
+    padding: 18px;
+    border: 2px solid azure;
+    margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
+}
+
+.Experience {
+    grid-area: exp;
+    background-color: azure;
+    padding: 18px;
+    border: 2px solid azure;
+    margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
+}
+
+.education {
+    grid-area: edu;
+    background-color: azure;
+    padding: 18px;
+    border: 2px solid azure;
+    margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
+}
+
+.Volunteering {
+    grid-area: vol;
+    background-color: azure;
+    padding: 18px;
+    border: 2px solid azure;
+    margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
+}
+
+.Languages {
+    grid-area: lan;
+    background-color: azure;
+    padding: 18px;
+    border: 2px solid azure;
+    margin: 1px;
+    animation-name: first;
+    animation-duration: 10s;
+}
